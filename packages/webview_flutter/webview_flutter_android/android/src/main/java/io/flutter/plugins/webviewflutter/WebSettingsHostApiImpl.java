@@ -124,7 +124,7 @@ public class WebSettingsHostApiImpl implements WebSettingsHostApi {
     final WebSettings webSettings = (WebSettings) instanceManager.getInstance(instanceId);
     webSettings.setAllowFileAccess(enabled);
     webSettings.setMixedContentMode(WebSettings.MIXED_CONTENT_COMPATIBILITY_MODE);
-    webSettings.setAllowFileAccessFromFileURLs(true); //Maybe you don't need this rule
+    webSettings.setAllowFileAccessFromFileURLs(true);
     webSettings.setAllowUniversalAccessFromFileURLs(true);
   }
 }
